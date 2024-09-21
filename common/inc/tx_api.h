@@ -130,7 +130,9 @@ extern   "C" {
 
 /* Include the port-specific data type file.  */
 
-#include "tx_port.h"
+//TODO: Fix the includes
+//#include "tx_port.h"
+#include <../../../threadx/ports/cortex_m4/gnu/inc/tx_port.h>
 
 #if (defined(TX_EXECUTION_PROFILE_ENABLE) && !defined(TX_ENABLE_EXECUTION_CHANGE_NOTIFY))
 #include "tx_execution_profile.h"
